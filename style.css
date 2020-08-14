@@ -1,0 +1,55 @@
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 20px 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dflex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.navlist li {
+  margin: 0px 5px;
+  padding: 5px;
+}
+
+.soon {
+  font-size: 3rem;
+  position: absolute;
+  top: 30%;
+}
