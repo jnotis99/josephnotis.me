@@ -49,7 +49,34 @@ ul {
 }
 
 .soon {
-  font-size: 3rem;
+  font-size: 5em;
   position: absolute;
+}
+
+.soon-text {
   top: 30%;
+}
+.soon-dots {
+  top: 40%;
+}
+
+.loading-1 {
+  animation: fade 1.25s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.loading-2 {
+  animation: fade 1.25s ease-in-out .4s;
+  animation-iteration-count: infinite;
+}
+
+.loading-3 {
+  animation: fade 1.25s ease-in-out .8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0% {opacity: 100%;}
+  50% {opacity: 33%;}
+  100% {opacity: 100%;}
 }
