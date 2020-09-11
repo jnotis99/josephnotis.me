@@ -3,17 +3,23 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 100px;
   padding: 0;
 }
 
 nav {
-  padding: 20px 40px;
+  padding: 40px 0px 0px;
 }
 
 ul {
   list-style-type: none;
 }
+
+.logo {
+  width: 100px;
+}
+
+/* flexbox classes */
 
 .dflex {
   display: flex;
@@ -43,40 +49,18 @@ ul {
   align-items: center;
 }
 
-.navlist li {
-  margin: 0px 5px;
-  padding: 5px;
+.self-start {
+  align-self: flex-start;
 }
 
-.soon {
-  font-size: 5em;
-  position: absolute;
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 0 200px;
+  }
 }
 
-.soon-text {
-  top: 30%;
-}
-.soon-dots {
-  top: 40%;
-}
-
-.loading-1 {
-  animation: fade 1.25s ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.loading-2 {
-  animation: fade 1.25s ease-in-out .4s;
-  animation-iteration-count: infinite;
-}
-
-.loading-3 {
-  animation: fade 1.25s ease-in-out .8s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes fade {
-  0% {opacity: 100%;}
-  50% {opacity: 33%;}
-  100% {opacity: 100%;}
+@media only screen and (max-width: 640px) {
+  body {
+    margin: 0px 25px;
+  }
 }
