@@ -3,45 +3,100 @@
 
 <head>
   <title>Joseph Notis</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-  <nav class="dflex justify-between align-center">
-    <img class="logo" src="img/logov1.png" />
-    <!-- <ul class="navlist dflex justify-end">
-      <li>About</li>
-      <li>Resume</li>
-      <li>Contact</li>
-    </ul> -->
-
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <img src="/img/Logov2.png" class="navbar-brand" height="100">
+    </div>
   </nav>
   <main>
-    <header class="dflex justify-content-between">
-      <div class="container">
-        <h2 class="intro-header">Hi! I'm Joseph. I'm a senior at Dartmouth studying quantitative social science and
-          computer science.<br>
-          I'm interested in a bunch of things. Check them out!
-        </h2>
+    <header>
+      <div class="container my-3">
+        <h3>Hi I'm Joseph. I'm a senior at Dartmouth studying quantitative social science and computer science.</h3>
       </div>
     </header>
-    <div class="container">
-      <!-- <div class="dflex justify-center">
-        <h1 class="soon soon-text">Coming soon</h1>
-      </div>
-      <div class="dflex justify-center">
-        <h1 class="soon soon-dots">
-          <span class="loading-1">&middot;</span>
-          <span class="loading-2">&middot;</span>
-          <span class="loading-3">&middot;</span>
-        </h1>
-      </div> -->
+    <div class="container py-4">
+      <h4>This fall I'm...</h4>
+      <ul>
+        <li class="doing-text mb-1">writing a paper analyzing the reaction to COVID-19 by Governments and
+          Twitter</li>
+        <li class="doing-text mb-1">building a game to help students improve their JavaScript skills</li>
+        <li class="doing-text mb-1">teaching R and writing code snippets for Dartmouth Sports Analytics</li>
+        <li class="doing-text mb-1">(hopefully) winning in fantasy football</li>
+      </ul>
+      <h4>Last summer I...</h4>
+      <ul>
+        <li class="doing-text mb-1">was a TA for "Full Stack Web Development"</li>
+        <li class="doing-text mb-1">built a morse code sender in "Digital Electronics"</li>
+        <li class="doing-text mb-1">helped people who are at-risk for COVID-19 get their pharmecuticals delivered
+          through Stop the Spread</li>
+      </ul>
     </div>
-    <div class="container">
 
+    <div class="container py-3 border-top">
+      <h3>Projects</h3>
+      <!-- TURN TO CARDS -->
+      <!-- <ul>
+        <li>TutorBase</li>
+        <li>Morse code sender</li>
+        <li>COVID-19 commuting zone legislation database</li>
+        <li>Nuggets</li>
+        <li>Sports writing</li>
+      </ul> -->
+      <div class="d-flex flex-row flex-wrap justify-content-between align-items-between py-2">
+        <div class="card project-card my-3">
+          <img class="card-img" src="/img/projects/tutorbase-icon.png" />
+          <div class="card-text card-desc">
+            <h5>TutorBase</h5>
+            <p>A full-stack website that helps Dartmouth students tutor other Dartmouth students.</p>
+          </div>
+        </div>
+
+        <div class="card project-card my-3">
+          <img class="card-img" src="/img/projects/morse-icon.png" />
+          <div class="card-text card-desc">
+            <h5>Morse Code</h5>
+            <p>A Field-Programmable Gate Array that translates ASCII input into morse code light and sound.</p>
+          </div>
+        </div>
+
+        <div class="card project-card my-3">
+          <img class="card-img" src="/img/projects/DSA-icon.png" />
+          <div class="card-text card-desc">
+            <h5>Sports Analytics</h5>
+            <p>Independent research and Head of Research for Dartmouth Sports Analytics</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+    <div class="container py-3 border-top">
+      <h3>Skills</h3>
+      <ul>
+        <li>Webdev: React/React Native, Redux, Node.js, Express, Material-UI, Bootstrap</li>
+        <li>Data Analysis/Visualization: Python (pandas, numpy, matplotlib, seaborn, scikit-learn), R (tidyverse,
+          ggplot), SQL, STATA, Excel</li>
+        <li>Collaboration: Agile project management, ZenHub, git</li>
+      </ul>
+    </div>
+
   </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
