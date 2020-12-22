@@ -22,30 +22,28 @@
       </div>
     </header>
     <div class="container py-4">
-      <h4>This winter I'm...</h4>
-      <ul>
-        <li class="doing-text mb-1">Continuing work on DecodeMe, a site that teaches internet surfers about their
-          personal data</li>
-        <li class="doing-text mb-1">building a game to help students improve their JavaScript skills</li>
-        <li class="doing-text mb-1">teaching R and writing code snippets for Dartmouth Sports Analytics</li>
-      </ul>
-      <h4>Previously I...</h4>
-      <ul>
-        <li class="doing-text mb-1">wrote a paper analyzing the reaction to COVID-19 by Governments and
-          Twitter</li>
-        <li class="doing-text mb-1">was a TA for "Full Stack Web Development"</li>
-        <li class="doing-text mb-1">built a morse code sender in "Digital Electronics"</li>
-        <li class="doing-text mb-1">helped people who are at-risk for COVID-19 get their pharmecuticals delivered
-          through Stop the Spread</li>
-      </ul>
+      <h4>
+        This winter I'm <span id="currently">leading research for Dartmouth Sports Analytics</span>
+      </h4>
+      <h4>Previously I <span id="previously">helped people who are at-risk for COVID-19 get their pharmecuticals
+          delivered through Stop the Spread</span></h4>
     </div>
 
     <div class="container py-3 border-top">
       <h3>Projects</h3>
-      <div class="d-flex flex-row flex-wrap justify-content-between align-items-between py-2">
+      <div class="d-flex flex-md-row flex-wrap justify-content-between align-items-between py-2">
+
+        <div class="card project-card my-3">
+          <img class="card-img" src="/img/projects/decodeme-icon.svg" />
+          <div class="card-img-overlay project-hover">
+            <h5>DecodeMe</h5>
+            <p>Raising awareness about internet browsers' personal data.</p>
+          </div>
+        </div>
+
         <div class="card project-card my-3">
           <img class="card-img" src="/img/projects/tutorbase-icon.png" />
-          <div class="card-text card-desc">
+          <div class="card-img-overlay project-hover">
             <h5>TutorBase</h5>
             <p>A full-stack website that helps Dartmouth students tutor other Dartmouth students.</p>
           </div>
@@ -53,7 +51,7 @@
 
         <div class="card project-card my-3">
           <img class="card-img" src="/img/projects/morse-icon.png" />
-          <div class="card-text card-desc">
+          <div class="card-img-overlay project-hover">
             <h5>Morse Code</h5>
             <p>A Field-Programmable Gate Array that translates ASCII input into morse code light and sound.</p>
           </div>
@@ -61,7 +59,7 @@
 
         <div class="card project-card my-3">
           <img class="card-img" src="/img/projects/DSA-icon.png" />
-          <div class="card-text card-desc">
+          <div class="card-img-overlay project-hover">
             <h5>Sports Analytics</h5>
             <p>Independent research and Head of Research for Dartmouth Sports Analytics</p>
           </div>
@@ -73,10 +71,10 @@
     <div class="container py-3 border-top">
       <h3>Skills</h3>
       <ul>
+        <li>Programming: C, Java, Javascript, Typescript, Python, VHDL</li>
         <li>Webdev: React/React Native, Redux, Node.js, Express, Material-UI, Bootstrap</li>
         <li>Data Analysis/Visualization: Python (pandas, numpy, matplotlib, seaborn, scikit-learn), R (tidyverse,
           ggplot), SQL, STATA, Excel</li>
-        <li>Collaboration: Agile project management, ZenHub, git</li>
       </ul>
     </div>
 
@@ -90,6 +88,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
